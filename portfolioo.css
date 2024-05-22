@@ -1,153 +1,142 @@
-body {
-    font-family: Arial, sans-serif;
+/* Basic reset and body styling */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header styling */
 header {
-    background-color: #333;
+    background: #333;
     color: #fff;
-    padding: 20px;
+    padding: 1rem 0;
+    text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
+header h1 {
+    margin-bottom: 1rem;
+}
+
+header nav ul {
+    list-style: none;
     padding: 0;
 }
 
-nav ul li {
-    list-style: none;
+header nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin: 0 1rem;
 }
 
-nav ul li a {
-    list-style: none;
-    text-decoration: none;
+header nav ul li a {
     color: #fff;
+    text-decoration: none;
 }
 
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section styling */
 section {
-    padding: 50px 20px;
-}
-
-#home {
-    background-color: #f4f4f4;
+    padding: 2rem 0;
     text-align: center;
 }
 
-#about {
-    background-color: #e9e9e9;
+section h2 {
+    margin-bottom: 1rem;
+    color: #333;
 }
 
-#skills li{
-    list-style: none;
-    background-color: #f4f4f4;
-    justify-content: center;
-    align-items: center;
+section p {
+    margin-bottom: 1rem;
 }
 
-#projects {
-    background-color: #e9e9e9;
-}
-
-.project {
-    margin-bottom: 20px;
-}
-#Download R {
-    background-color: #f4f4f4;
-}
-
-
-#Certifications {
-    background-color: #f4f4f4;
-}
-#Certifications li{
-    list-style: none;
-}
-.about-img img {
-    border-radius: 50%;
-    width: 52vh;
-    height: 54vh;
-    position: relative;
-    outline: 0.3rem solid var(--main-color);
-    padding: 0.5rem;
-  }
-  
-  .about {
-    display: flex;
-    justify-content: center;
-    /* text-align: center; */
-    align-items: center;
-    gap: 4rem;
-    /* background-color: red; */
-  }
-  .heading {
-    font-size: 4.5rem;
-    text-align: center;
-  }
-  .about-content h2 {
-    line-height: 1.2;
-    text-align: left;
-  }
-  .about-content h3 {
-    font-size: 1rem;
-    line-height: 2;
-  }
-  .about-content p {
-    font-size: 1.6rem;
-    line-height: 1.2;
-  }
-.text-content {
-    padding: 30px;
-    width: 1000%; /* Set the width of the text content to 70% */
-    box-sizing: border-box;
+/* About section styling */
+.about {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 50%; /* Set the height of the text content to 100% of the container height */
-}
-.text-content h3,
-.text-content h1,
-.text-content h4 {
-    margin: 5px 0;
-}
-.text-content h1 {
-    color: blue;
-}
-.long {
-    display: none; /* Initially hide the long paragraph */
+    align-items: center;
 }
 
-.read-more-btn {
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
+.about-img img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.about-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-content h2 span {
+    color: #007bff;
+}
+
+/* Skills section styling */
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    display: inline-block;
+    background: #f4f4f4;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
-    cursor: pointer;
 }
 
+/* Projects section styling */
+.project {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contact section styling */
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+.logos {
+    margin-top: 1rem;
+}
+
+.logos a {
+    margin: 0 0.5rem;
+    color: #333;
+}
+
+.logos a:hover {
+    color: #007bff;
+}
+
+/* Footer styling */
 footer {
-    background-color: #333;
+    background: #333;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 1rem 0;
+    margin-top: 2rem;
 }
-#contact a[href^="mailto"] {
-    color: red;
+
+#download-resume a{
+    color: #007bff;
+    text-decoration: none;
 }
-.linkedin .logo {
-    color: #0e76a8; /* LinkedIn brand color */
-}
-.whatsapp .logo {
-    color: #0ea86a; /* Facebook brand color */
-}
-.instagram .logo {
-    color: #e4405f; /* Instagram brand color */
-}
-.logo:hover{
-    transform:0.5s;
-    color: black;
-}
+
 
